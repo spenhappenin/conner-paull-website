@@ -8,7 +8,7 @@ const Navbar = () => (
     <div />
     <Logo src={logo} />
     <NavItems>
-      <NavItem to="/products">Product</NavItem>
+      <NavItem to="/">Product</NavItem>
       <NavItem to="/travel">Travel</NavItem>
       <NavItem to="/contact">Contact</NavItem>
     </NavItems>
