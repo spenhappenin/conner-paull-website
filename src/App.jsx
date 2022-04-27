@@ -7,14 +7,14 @@ import NotFound from './components/NotFound'
 import ContentsPage from './components/ContentsPage'
 import ContentView from './components/ContentView'
 
-import productData from './data/products'
+import { productsData, travelData } from './data/content'
 
 const App = () => (
   <AppWrapper>
     <Navbar />
     <Routes>
-      <Route element={<ContentsPage contents={productData} />} path="/" />
-      <Route element={<ContentsPage contents={productData} />} path="/travel" />
+      <Route element={<ContentsPage contents={productsData} />} path="/" />
+      <Route element={<ContentsPage contents={travelData} />} path="/travel" />
       <Route element={<ContentView />} path=":contentName" />
       <Route element={<Contact />} path="/contact" />
       <Route element={<NotFound />} path="*" />
